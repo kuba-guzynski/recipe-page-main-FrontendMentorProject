@@ -12,7 +12,6 @@
 }
 
 
-
 body {
     width: 100vw;
     height: auto;
@@ -171,28 +170,6 @@ h2 {
     margin-left: 16px;
 }
 
-/* .steps {
-    all: unset;
-    margin-top: 24px;
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    list-style-position: inside;
-    padding-left: 8px;
-    list-style-type: decimal;
-    flex-shrink: 0;
-
-
-}
-
-ol li::marker {
-    font-family: 'Outfit';
-    font-size: 16px;
-    line-height: 150%;
-    font-weight: 700;
-} */
-
 .steps {
     align-self: stretch;
     counter-reset: step;
@@ -245,9 +222,13 @@ ol li::marker {
 }
 
 .nutrition-grid {
+    align-self: stretch;
     display: grid;
-    grid-template-columns: 288px 288px;
     column-gap: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    grid-template-columns: 1fr 1fr;
+
 }
 
 .makro {
@@ -256,4 +237,48 @@ ol li::marker {
     font-size: 16px;
     font-weight: 700;
     line-height: 150%;
+}
+
+@media (max-width: 600px) {
+
+    body {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        background-color: #ffffff;
+    }
+
+    main {
+        width: 100%;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        flex-shrink: 0;
+        background-color: #ffffff;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    img {
+        align-self: stretch;
+        border-radius: 0;
+        height: auto;
+
+    }
+
+    .recipe {
+
+        padding: 0 40px 40px 40px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    main {
+        max-width: 616px;
+    }
 }
