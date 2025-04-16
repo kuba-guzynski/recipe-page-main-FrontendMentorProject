@@ -13,15 +13,15 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 Desktop view
 
-![](./screenshot_desktop.png)
+![](./screenshot_desktop.jpg)
 
 Tablet view
 
-![](./screenshot-tablet.png)
+![](./screenshot-tablet.jpg)
 
 Mobile view
 
-![](./screenshot-mobile.png)
+![](./screenshot-mobile.jpg)
 
 ### Links
 
